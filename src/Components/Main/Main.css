@@ -1,0 +1,40 @@
+.mainPart {
+    display: flex;
+    background: linear-gradient(90deg,  #111,#333,#777) ;
+    justify-content: space-between;
+    height: 90vh;
+    & .LeftPart {
+        color: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+        width: 50%;
+        & .name {
+            font-size: 80px;
+        }
+        & .welcome {
+            font-size: 40px;
+        }
+        & .description {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    & .RightPart {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        & .bgImage {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            left: 0;
+            object-position: -200px;
+            object-fit: cover;
+        }
+
+    }
+}
